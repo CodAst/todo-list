@@ -138,16 +138,15 @@ body {
     text-align: left;
     text-align: left;
   }
-  
+
   .prioridad-urgente {
     background-color: #d81b60;
     color: white;
     text-align: left;
-    text-align: left;
   }
   
   .prioridad-normal {
-    background-color: #ffbb00;
+    background-color: #f3b304;
     color: white;
     text-align: left;
   }
@@ -193,4 +192,6 @@ body {
   .tarea .tipo {
     text-align: left;
   }
+
+  
   
