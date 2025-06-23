@@ -10,7 +10,52 @@
   <h1>Mi Lista de Tareas</h1>
   <p>Nombre del estudiante: __________________________</p>
 
-  <!-- Aquí irá el formulario y la lista generada con JavaScript -->
+  <form id="formulario-tarea">
+    <div class="campo-formulario">
+      <label for="nombre">Nombre de la tarea* (max 25 caracteres):</label>
+      <input type="text" id="nombre" name="nombre" maxlength="25" required>
+    </div>
+
+    <div class="campo-formulario">
+      <label for="fecha">Fecha de entrega*:</label>
+      <input type="date" id="fecha" name="fecha" required>
+    </div>
+
+    <div class="campo-formulario">
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+    </div>
+
+    <div class="campo-formulario">
+      <label for="tipo">Tipo de tarea:</label>
+      <select id="tipo" name="tipo">
+        <option value="" selected disabled>Seleccione un tipo</option>
+        <option value="Universidad">Universidad</option>
+        <option value="Personal">Personal</option>
+        <option value="Trabajo">Trabajo</option>
+        <option value="Hobby">Hobby</option>
+      </select>
+    </div>
+
+    <div class="campo-formulario">
+      <label>Prioridad*:</label>
+      <div class="opciones-prioridad">
+        <label>
+          <input type="radio" name="prioridad" value="Urgente" required> Urgente
+        </label>
+        <label>
+          <input type="radio" name="prioridad" value="Normal"> Normal
+        </label>
+        <label>
+          <input type="radio" name="prioridad" value="Baja"> Baja
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" id="agregar-tarea">Agregar tarea</button>
+  </form>
+
+  <div id="lista-tareas"></div>
 
   <script src="app.js"></script>
 </body>
