@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const formulario = document.getElementById('formulario-tarea');
     const listaTareas = document.getElementById('lista-tareas');
 
-    
+
     formulario.addEventListener('submit', function(e) {
       e.preventDefault();
       
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const tipo = document.getElementById('tipo').value;
       const prioridad = document.querySelector('input[name="prioridad"]:checked').value;
       
-      //ALERTA DE OBLIGATORIO
+      //ALERTA DE OBLIGATORIOp
       if (!nombre || !fecha || !prioridad) {
         alert('Por favor complete todos los campos obligatorioss');
         return;
